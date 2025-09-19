@@ -11,15 +11,15 @@
         "typescript"
     ],
     "license": "MIT",
-    "author": "Emanuel Cortez",
+    "author": "Emanuel Cortez - VelascoSoftware",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/tu-usuario/next-api-router.git"
+        "url": "git+https://github.com/velascosoft/next-api-router.git"
     },
     "bugs": {
-        "url": "https://github.com/tu-usuario/next-api-router/issues"
+        "url": "https://github.com/velascosoft/next-api-router/issues"
     },
-    "homepage": "https://github.com/tu-usuario/next-api-router#readme",
+    "homepage": "https://github.com/velascosoft/next-api-router/blob/main/README.md",
     "type": "module",
     "main": "./dist/index.cjs",
     "module": "./dist/index.mjs",

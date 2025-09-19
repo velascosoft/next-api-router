@@ -1,4 +1,4 @@
-# @tu-scope/next-api-router
+# @velascosoft/next-api-router
 
 Router con **decorators** y **middlewares** para el **App Router de Next.js** (Route Handlers).  
 Inspirado en frameworks como Spring o Nest, pero simplificado y adaptado a la filosofía de Next.
@@ -19,7 +19,7 @@ Inspirado en frameworks como Spring o Nest, pero simplificado y adaptado a la fi
 ## 📦 Instalación
 
 ```bash
-npm install @tu-scope/next-api-router reflect-metadata
+npm install @velascosoft/next-api-router reflect-metadata
 ```
 
 > Requiere:  
@@ -95,22 +95,6 @@ const authMiddleware: Middleware = async (req, params, next) => {
 ```
 
 Se pueden aplicar con `@UseController(...)` o `@Use(...)` en un handler específico.
-
----
-
-## 🛑 Manejo de errores
-
-Por defecto, `ApiRouter` atrapa errores y devuelve un `500`.  
-Podés personalizarlo globalmente con `.onError(handler)` o por ruta.
-
-```ts
-router.onError((err, req, params) => {
-  return NextResponse.json(
-    { success: false, message: (err as Error).message },
-    { status: 500 }
-  );
-});
-```
 
 ---
 
