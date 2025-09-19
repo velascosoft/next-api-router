@@ -19,7 +19,7 @@
         "emitDecoratorMetadata": true,
         "types": [
             "reflect-metadata"
-        ] // 👈 clave para que TS conozca get/defineMetadata
+        ]
     },
     "include": [
         "src"
