@@ -1,4 +1,4 @@
-# @velascosoft/next-api-router
+# @velascosoftware/next-api-router
 
 Router con **decorators** y **middlewares** para el **App Router de Next.js** (Route Handlers).  
 Inspirado en frameworks como Spring o Nest, pero simplificado y adaptado a la filosofía de Next.
@@ -19,7 +19,7 @@ Inspirado en frameworks como Spring o Nest, pero simplificado y adaptado a la fi
 ## 📦 Instalación
 
 ```bash
-npm install @velascosoft/next-api-router reflect-metadata
+npm install @velascosoftware/next-api-router reflect-metadata
 ```
 
 > Requiere:  
@@ -35,7 +35,7 @@ npm install @velascosoft/next-api-router reflect-metadata
 
 ```ts
 import { NextRequest, NextResponse } from 'next/server';
-import { RequestMapping, Use, UseController, type Middleware } from '@tu-scope/next-api-router';
+import { RequestMapping, Use, UseController, type Middleware } from '@velascosoftware/next-api-router';
 
 const logger: Middleware = async (req, params, next) => {
   console.log(req.method, req.nextUrl.pathname, params);
@@ -65,7 +65,7 @@ class UserController {
 
 ```ts
 import 'reflect-metadata';
-import { ApiRouter } from '@tu-scope/next-api-router';
+import { ApiRouter } from '@velascosoftware/next-api-router';
 
 const router = new ApiRouter('', new UserController());
 
@@ -84,7 +84,7 @@ export async function POST(req: NextRequest) {
 Un **middleware** es una función que recibe `(req, params, next)` y devuelve un `NextResponse`:
 
 ```ts
-import type { Middleware } from '@tu-scope/next-api-router';
+import type { Middleware } from '@velascosoftware/next-api-router';
 
 const authMiddleware: Middleware = async (req, params, next) => {
   if (!req.headers.get('authorization')) {

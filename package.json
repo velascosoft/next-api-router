@@ -1,6 +1,16 @@
 {
     "name": "@velascosoftware/next-api-router",
     "version": "1.0.0",
+    "license": "MIT",
+    "author": "Emanuel Cortez - VelascoSoftware",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/velascosoft/next-api-router.git"
+    },
+    "bugs": {
+        "url": "https://github.com/velascosoft/next-api-router/issues"
+    },
+    "homepage": "https://github.com/velascosoft/next-api-router/blob/main/README.md",
     "type": "module",
     "main": "./dist/index.cjs",
     "module": "./dist/index.js",
