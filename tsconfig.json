@@ -1,3 +1,4 @@
+// tsconfig.json
 {
     "compilerOptions": {
         "target": "ES2022",
@@ -16,7 +17,9 @@
         "forceConsistentCasingInFileNames": true,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
-        "types": []
+        "types": [
+            "reflect-metadata"
+        ] // 👈 clave para que TS conozca get/defineMetadata
     },
     "include": [
         "src"
