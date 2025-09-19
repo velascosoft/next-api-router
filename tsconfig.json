@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "lib": [
+            "ES2022",
+            "DOM"
+        ],
+        "declaration": true,
+        "emitDeclarationOnly": false,
+        "outDir": "dist",
+        "strict": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "types": []
+    },
+    "include": [
+        "src"
+    ]
+}
