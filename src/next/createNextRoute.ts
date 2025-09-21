@@ -4,7 +4,17 @@ import { HTTP_METHOD } from '../types';
 
 type NextHandler = (req: NextRequest) => Promise<Response> | Response;
 
-export function createNextRoute(controller: ApiRouteController, basePath = ''): Record<HTTP_METHOD, NextHandler> {
+type RouterRecords = {
+    GET: NextHandler,
+    POST: NextHandler,
+    PUT: NextHandler,
+    PATCH: NextHandler,
+    DELETE: NextHandler,
+    OPTIONS: NextHandler,
+    HEAD: NextHandler
+}
+
+export function createNextRoute(controller: ApiRouteController, basePath = ''): RouterRecords {
     const router = new ApiRouter(basePath, controller);
     const handle: NextHandler = (req) => router.handle(req);
 
