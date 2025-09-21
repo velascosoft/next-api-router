@@ -1,8 +1,16 @@
 {
     "name": "@velascosoftware/next-api-router",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "license": "MIT",
     "author": "Emanuel Cortez - VelascoSoftware",
+    "keywords": [
+        "nextjs",
+        "app-router",
+        "route-handlers",
+        "decorators",
+        "middleware",
+        "typescript"
+    ],
     "repository": {
         "type": "git",
         "url": "git+https://github.com/velascosoft/next-api-router.git"
@@ -20,15 +28,41 @@
             "types": "./dist/index.d.ts",
             "import": "./dist/index.js",
             "require": "./dist/index.cjs"
+        },
+        "./comfort": {
+            "import": "./dist/entry/comfort.js",
+            "require": "./dist/entry/comfort.cjs"
+        },
+        "./core": {
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs"
         }
     },
     "files": [
         "dist"
     ],
+    "sideEffects": false,
     "scripts": {
         "build": "tsup",
         "clean": "rm -rf dist",
         "prepare": "npm run build",
         "prepublishOnly": "npm run clean && npm run build"
+    },
+    "engines": {
+        "node": ">=18.17"
+    },
+    "peerDependencies": {
+        "next": ">=13.4",
+        "reflect-metadata": "^0.2.2"
+    },
+    "dependencies": {
+        "http-status-codes": "^2.3.0",
+        "path-to-regexp": "^8.2.0"
+    },
+    "devDependencies": {
+        "reflect-metadata": "^0.2.2",
+        "tsup": "^8.0.1",
+        "typescript": "^5.8.3",
+        "@types/node": "^24.5.2"
     }
 }

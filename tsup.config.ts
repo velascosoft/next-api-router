@@ -9,4 +9,5 @@ export default defineConfig({
     target: 'es2022',
     minify: false,
     treeshake: true,
+    external: ['next', 'reflect-metadata', 'path-to-regexp', 'http-status-codes']
 });
