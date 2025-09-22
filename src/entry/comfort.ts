@@ -1,4 +1,2 @@
-import { ensureReflectMetadataLoaded } from '../runtime/reflect-once';
-ensureReflectMetadataLoaded();
-
+import 'reflect-metadata';
 export * from '../index-core';

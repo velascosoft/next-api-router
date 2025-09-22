@@ -8,14 +8,14 @@ export default defineConfig({
     format: ['esm', 'cjs'],
     dts: {
         entry: {
-            index: 'src/index.ts', 
+            index: 'src/index.ts',
             'entry/comfort': 'src/entry/comfort.ts',
         },
     },
     clean: true,
     sourcemap: true,
     target: 'es2022',
-    minify: false,
     treeshake: true,
+    minify: false,
     external: ['next', 'reflect-metadata', 'path-to-regexp', 'http-status-codes'],
 });

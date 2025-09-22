@@ -1,6 +1,6 @@
 {
     "name": "@velascosoftware/next-api-router",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "license": "MIT",
     "author": "Emanuel Cortez - VelascoSoftware",
     "keywords": [
@@ -30,12 +30,9 @@
             "require": "./dist/index.cjs"
         },
         "./comfort": {
+            "types": "./dist/entry/comfort.d.ts",
             "import": "./dist/entry/comfort.js",
             "require": "./dist/entry/comfort.cjs"
-        },
-        "./core": {
-            "import": "./dist/index.js",
-            "require": "./dist/index.cjs"
         }
     },
     "files": [

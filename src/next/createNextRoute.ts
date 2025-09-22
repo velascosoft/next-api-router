@@ -1,6 +1,5 @@
 import type { NextRequest } from 'next/server';
 import { ApiRouteController, ApiRouter } from '../http/routing/ApiRouter';
-import { HTTP_METHOD } from '../types';
 
 type NextHandler = (req: NextRequest) => Promise<Response> | Response;
 

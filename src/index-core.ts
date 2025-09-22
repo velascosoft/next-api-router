@@ -16,4 +16,3 @@ export type {
 } from './http/middlewares';
 
 export { createNextRoute } from './next/createNextRoute';
-export { createNextRouteLazy } from './next/createNextRouteLazy';
