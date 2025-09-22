@@ -2,14 +2,12 @@ import { defineConfig } from 'tsup';
 
 export default defineConfig({
     entry: {
-        index: 'src/index.ts',
-        'entry/comfort': 'src/entry/comfort.ts',
+        index: 'src/index.ts'
     },
     format: ['esm', 'cjs'],
     dts: {
         entry: {
-            index: 'src/index.ts',
-            'entry/comfort': 'src/entry/comfort.ts',
+            index: 'src/index.ts'
         },
     },
     clean: true,
